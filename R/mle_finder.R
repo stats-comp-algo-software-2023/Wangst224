@@ -13,3 +13,9 @@ find_mle_linear_bfgs = function(design, outcome) {
 
     return(op_result$par)
 }
+
+find_mle_linear_pseudo_inv = function(design, outcome) {
+
+    chol2inv(chol(t(design) %*% design)) %*% t(design) %*% outcome
+
+}
