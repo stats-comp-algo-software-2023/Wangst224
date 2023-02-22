@@ -1,5 +1,4 @@
 source("help.R")
-source("../../R/log_likelihood.R")
 
 test_that("linear regression log likelihood gradient", {
 
